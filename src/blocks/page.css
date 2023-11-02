@@ -1,0 +1,13 @@
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  padding: 0;
+  display: block;
+}
