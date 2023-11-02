@@ -60,6 +60,7 @@
   height: 30px;
   color: rgba(66, 164, 24, 1);
   background-color: rgba(217, 240, 208, 1);
+  font-family: "Inter", Arial, sans-serif;
   transition: 0.1s;
 }
 

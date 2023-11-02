@@ -12,4 +12,7 @@ This project is a demo that was completed for Lifted Logic. Check out their webs
 
 ## Comments
 
-- I kept this project very vanilla. I did not use and JS frameworks such as React or Angular, and I will only include webpack if I need to deploy to GitHub Pages.
+- **Keeping it simple:** I kept this project very vanilla. I did not use any JS frameworks such as React or Angular. I felt this would better show my personal skills as a developer.
+
+- **Data Validation:** I have written a custom hook in the past to be able to initialize data validation in forms in a signle line of code.  
+  &emsp;[Link Here]
