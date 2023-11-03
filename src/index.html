@@ -117,16 +117,42 @@
             Snyder Recording artist, now available on Apple Music & Spotify.
           </p>
           <form class="contact__form-container">
-            <div class="contact__form-top">
+            <fieldset class="contact__form-top">
               <div class="contact__form-top-left">
                 <label class="contact__label">First Name</label>
-                <input class="contact__text-box" placeholder="First Name" />
+                <input
+                  class="contact__text-box"
+                  type="text"
+                  id="first"
+                  name="first"
+                  minlength="2"
+                  maxlength="30"
+                  placeholder="First Name"
+                  required
+                />
                 <label class="contact__label">Email Address</label>
-                <input class="contact__text-box" placeholder="Email Address" />
+                <input
+                  class="contact__text-box"
+                  type="email"
+                  id="email"
+                  name="email"
+                  minlength="2"
+                  placeholder="Email Address"
+                  required
+                />
               </div>
               <div class="contact__form-top-right">
                 <label class="contact__label">Last Name</label>
-                <input class="contact__text-box" placeholder="Last Name" />
+                <input
+                  class="contact__text-box"
+                  type="text"
+                  id="last"
+                  name="last"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                  placeholder="Last Name"
+                />
                 <label for="reasons" class="contact__label"
                   >Reason for Contacting</label
                 >
@@ -140,15 +166,17 @@
                   <option class="contact__dropdown-item">Option2</option>
                 </select>
               </div>
-            </div>
-            <div class="contact__form-bottom">
+            </fieldset>
+            <fieldset class="contact__form-bottom">
               <label class="contact__label">Message (Optional)</label>
               <input
                 class="contact__text-box_type_large"
                 placeholder="Write a brief message..."
               />
-              <button class="contact__learn-button">Learn More</button>
-            </div>
+              <button type="submit" class="contact__learn-button" name="">
+                Learn More
+              </button>
+            </fieldset>
           </form>
         </div>
         <div class="contact__form-image-section"></div>
