@@ -13,8 +13,8 @@ This project is a demo that was completed for Lifted Logic. Check out their webs
 
 ## Other Projects to Check Out:
 
-> - [Random Pokemon Generator](https://github.com/DavidMiles1925/random-pokemon-react) - A simple React website that generates a random pokemon.
-> - &emsp;[GetPokemon Tool](https://github.com/DavidMiles1925/get-pokemon) - A Python program used to query PokeAPI in order to gather Pokemon data for the above random generator.
-> - [Water Alarm Clock](https://github.com/DavidMiles1925/water_alarm_clock) - It is an alarm clock that shoots you with water to wake you up! Built with my Raspberry Pi and Python
-> - [Around the U.S.](https://github.com/DavidMiles1925/se_project_aroundtheus) - This is a HTML/CSS/JavaScript project to display places around the U.S. (or world)
-> - [Garage Opener](https://github.com/DavidMiles1925/garage_opener) - A Raspberry Pi project where I made my Raspberry Pi into a remote garage door opener that I could use from anywhere.
+> - [**Random Pokemon Generator**](https://github.com/DavidMiles1925/random-pokemon-react) - A simple React website that generates a random pokemon.
+> - &emsp;[**GetPokemon Tool**](https://github.com/DavidMiles1925/get-pokemon) - A Python program used to query PokeAPI in order to gather Pokemon data for the above random generator.
+> - [**Water Alarm Clock**](https://github.com/DavidMiles1925/water_alarm_clock) - It is an alarm clock that shoots you with water to wake you up! Built with my Raspberry Pi and Python
+> - [**Around the U.S.**](https://github.com/DavidMiles1925/se_project_aroundtheus) - This is a HTML/CSS/JavaScript project to display places around the U.S. (or world)
+> - [**Garage Opener**](https://github.com/DavidMiles1925/garage_opener) - A Raspberry Pi project where I made my Raspberry Pi into a remote garage door opener that I could use from anywhere.

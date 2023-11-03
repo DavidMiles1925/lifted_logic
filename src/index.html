@@ -10,35 +10,33 @@
     />
     <meta name="author" content="David Miles" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>A.M. Paradox</title>
-    <script src="./pages/index.js"></script>
   </head>
 
   <body class="page">
     <header class="header">
       <div class="header__logo-section">
-        <img src="./images/Logos/Logo-Blue.svg" alt="Blue Logo" />
+        <div class="header__logo"></div>
       </div>
       <div class="header__nav">
         <div class="header__nav-item">
-          <img src="./images/Icons/Nav Icons/Home.svg" alt="Home" />
+          <div class="header__nav-image header__nav-image_type_home"></div>
           <a href="" class="header__nav-link-text">Home</a>
         </div>
         <div class="header__nav-item">
-          <img src="./images/Icons/Nav Icons/Record.svg" alt="Records" />
+          <div class="header__nav-image header__nav-image_type_record"></div>
           <a href="#records-heading" class="header__nav-link-text">Records</a>
         </div>
         <div class="header__nav-item">
-          <img src="./images/Icons/Nav Icons/Music Note.svg" alt="Music Note" />
+          <div class="header__nav-image header__nav-image_type_music"></div>
           <a href="#music-heading" class="header__nav-link-text">Music</a>
         </div>
         <div class="header__nav-item">
-          <img src="./images/Icons/Nav Icons/People.svg" alt="People" />
+          <div class="header__nav-image header__nav-image_type_artists"></div>
           <a href="" class="header__nav-link-text">Artists</a>
         </div>
         <div class="header__nav-item">
-          <img src="./images/Icons/Nav Icons/Calendar.svg" alt="Calendar" />
+          <div class="header__nav-image header__nav-image_type_concerts"></div>
           <a href="" class="header__nav-link-text">Concerts</a>
         </div>
       </div>
@@ -59,23 +57,16 @@
         </div>
         <div class="video__link-container">
           <div class="video__play-circle">
-            <img
-              class="video__play-logo"
-              src="./images/Icons/Basic Icons/Play button triangle.svg"
-              alt="Play triangle"
-            />
+            <div class="video__play-logo"></div>
           </div>
           <p class="video__link-text">Watch Video</p>
         </div>
       </div>
 
       <div class="brent">
+        <!-- Brent -->
         <div class="brent__image-container">
-          <img
-            class="brent__image"
-            src="./images/Images/brent.webp"
-            alt="Brent"
-          />
+          <div class="brent__image"></div>
         </div>
         <div class="brent__description-container">
           <h3 class="brent__heading" id="records-heading">
@@ -107,6 +98,86 @@
           Recording artist, now available on Apple Music & Spotify.
         </p>
       </div>
+      <!-- End of new-rel. -->
+
+      <div class="contact">
+        <div class="contact__description-container">
+          <h3 class="contact__form-heading">Get In Touch</h3>
+          <p class="contact__form-description">
+            New albums every single month, check out the newest & best from
+            Snyder Recording artist, now available on Apple Music & Spotify.
+          </p>
+          <form class="contact__form-container">
+            <fieldset class="contact__form-top">
+              <div class="contact__form-top-left">
+                <label class="contact__label">First Name</label>
+                <input
+                  class="contact__text-box"
+                  type="text"
+                  id="first"
+                  name="first"
+                  minlength="2"
+                  maxlength="30"
+                  placeholder="First Name"
+                  required
+                />
+                <span class="form__first-error"></span>
+                <label class="contact__label">Email Address</label>
+                <input
+                  class="contact__text-box"
+                  type="email"
+                  id="email"
+                  name="email"
+                  minlength="2"
+                  placeholder="Email Address"
+                  required
+                />
+                <span class="form__email-error"></span>
+              </div>
+              <div class="contact__form-top-right">
+                <label class="contact__label">Last Name</label>
+                <input
+                  class="contact__text-box"
+                  type="text"
+                  id="last"
+                  name="last"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                  placeholder="Last Name"
+                />
+                <span class="form__last-error"></span>
+                <label for="reasons" class="contact__label"
+                  >Reason for Contacting</label
+                >
+                <select
+                  id="reasons"
+                  name="reasons"
+                  class="contact__text-box_type_dropdown"
+                >
+                  <option value="" disabled selected>Select One</option>
+                  <option class="contact__dropdown-item">Option1</option>
+                  <option class="contact__dropdown-item">Option2</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="contact__form-bottom">
+              <label class="contact__label">Message (Optional)</label>
+              <input
+                class="contact__text-box_type_large"
+                placeholder="Write a brief message..."
+              />
+              <button type="submit" class="contact__learn-button" name="">
+                Learn More
+              </button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contact__form-image-section"></div>
+      </div>
+      <!-- End of contact. -->
     </main>
+
+    <footer></footer>
   </body>
 </html>

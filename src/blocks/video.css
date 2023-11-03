@@ -1,10 +1,31 @@
 .video {
   width: 100%;
   height: 720px;
-  background-image: url("../images/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash-resize.jpg");
-  background-size: cover;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.video::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg");
+  background-size: cover;
+  z-index: -1;
+  background-position: center center;
+  animation: zoom 20s infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  100% {
+    transform: scale(1.2); /* Zoomed scale */
+  }
 }
 
 .video__text-container {
@@ -47,4 +68,10 @@
   justify-content: center;
   color: #ffffff;
   font-weight: 700;
+}
+
+.video__play-logo {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Icons/Basic_Icons/Play_button_triangle.svg");
 }
