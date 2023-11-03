@@ -1,0 +1,37 @@
+.footer {
+  width: 100%;
+  max-height: 420px;
+  padding: 70px 49px 29px 50px;
+  background-color: #001d5d;
+}
+
+.footer__info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__logo-and-address-container {
+  max-width: 168px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 168px;
+  height: 63px;
+  background-image: url("../images/Logos/Logo-White.svg");
+  background-size: cover;
+}
+
+.footer__address-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__address {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 12px 0;
+}
