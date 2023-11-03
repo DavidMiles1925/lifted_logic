@@ -64,6 +64,7 @@
 .header__signin-button {
   width: 168px;
   height: 40px;
+  border: none;
   color: rgba(66, 164, 24, 1);
   background-color: rgba(217, 240, 208, 1);
   font-family: "Inter", Arial, sans-serif;
