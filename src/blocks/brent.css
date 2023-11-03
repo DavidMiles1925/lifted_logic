@@ -1,6 +1,6 @@
 .brent {
   width: 100%;
-  height: 711px;
+  max-height: 711px;
   padding: 128px 0px 128px 50px;
   display: flex;
   flex-direction: row;
