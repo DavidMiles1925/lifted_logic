@@ -18,7 +18,7 @@
   <body class="page">
     <header class="header">
       <div class="header__logo-section">
-        <img src="./images/Logos/Logo-Blue.svg" alt="Blue Logo" />
+        <img src="./images/Logos/Logo-Blue.svg" alt="Blue-Logo" />
       </div>
       <div class="header__nav">
         <div class="header__nav-item">
@@ -30,7 +30,7 @@
           <a href="#records-heading" class="header__nav-link-text">Records</a>
         </div>
         <div class="header__nav-item">
-          <img src="./images/Icons/Nav Icons/Music Note.svg" alt="Music Note" />
+          <img src="./images/Icons/Nav Icons/Music Note.svg" alt="Music-Note" />
           <a href="#music-heading" class="header__nav-link-text">Music</a>
         </div>
         <div class="header__nav-item">
@@ -107,6 +107,53 @@
           Recording artist, now available on Apple Music & Spotify.
         </p>
       </div>
+      <!-- End of new-rel. -->
+
+      <div class="contact">
+        <div class="contact__description-container">
+          <h3 class="contact__form-heading">Get In Touch</h3>
+          <p class="contact__form-description">
+            New albums every single month, check out the newest & best from
+            Snyder Recording artist, now available on Apple Music & Spotify.
+          </p>
+          <form class="contact__form-container">
+            <div class="contact__form-top">
+              <div class="contact__form-top-left">
+                <label class="contact__label">First Name</label>
+                <input class="contact__text-box" placeholder="First Name" />
+                <label class="contact__label">Email Address</label>
+                <input class="contact__text-box" placeholder="Email Address" />
+              </div>
+              <div class="contact__form-top-right">
+                <label class="contact__label">Last Name</label>
+                <input class="contact__text-box" placeholder="Last Name" />
+                <label for="reasons" class="contact__label"
+                  >Reason for Contacting</label
+                >
+                <select
+                  id="reasons"
+                  name="reasons"
+                  class="contact__text-box_type_dropdown"
+                >
+                  <option value="" disabled selected>Select One</option>
+                  <option class="contact__dropdown-item">Option1</option>
+                  <option class="contact__dropdown-item">Option2</option>
+                </select>
+              </div>
+            </div>
+            <div class="contact__form-bottom">
+              <label class="contact__label">Message (Optional)</label>
+              <input
+                class="contact__text-box_type_large"
+                placeholder="Write a brief message..."
+              />
+              <button class="contact__learn-button">Learn More</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact__form-image-section"></div>
+      </div>
+      <!-- End of contact. -->
     </main>
   </body>
 </html>
