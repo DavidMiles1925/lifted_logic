@@ -69,3 +69,9 @@
   color: #ffffff;
   font-weight: 700;
 }
+
+.video__play-logo {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Icons/Basic_Icons/Play_button_triangle.svg");
+}

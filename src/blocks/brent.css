@@ -18,6 +18,8 @@
   margin: 0;
   width: 100%;
   height: 100%;
+  background-image: url("../images/Images/brent.webp");
+  background-size: cover;
 }
 
 .brent__description-container {
