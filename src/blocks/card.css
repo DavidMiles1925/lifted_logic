@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  height: 500px;
+  width: 3750px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 570px;
+  max-height: 324px;
+  padding: 10px;
+  margin: 0 50px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  transition: transform 0.3s;
+}
