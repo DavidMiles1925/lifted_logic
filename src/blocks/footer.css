@@ -121,14 +121,14 @@
     align-items: center;
     margin: 0;
   }
-
-  .footer__link-section {
-  }
-}
-
-@media screen and (max-width: 850px) {
   .footer__link-container {
     padding: 60px;
     margin: 0 auto 0 0;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .footer__link-section {
+    margin: 0 auto;
   }
 }

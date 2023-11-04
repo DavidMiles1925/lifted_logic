@@ -33,7 +33,11 @@ function initMap() {
     position: markerPosition,
     map: map,
     title: "Lifted Logic",
-    label: "Lifted Logic",
+    label: {
+      text: "Lifted Logic",
+      color: "#ffffff",
+      fontSize: "32px",
+    },
   });
 }
 

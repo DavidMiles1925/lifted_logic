@@ -1,6 +1,6 @@
 .brent {
   max-width: 100%;
-  max-height: 1000px;
+  max-height: 1200px;
   padding: 128px 0px 128px 50px;
   display: flex;
   flex-direction: row;
@@ -59,7 +59,12 @@
 }
 
 @media screen and (max-width: 676px) {
+  .brent {
+    padding: 48px 20px 48px 10px;
+  }
+
   .brent__image-container {
-    max-width: 100%;
+    width: 300px;
+    height: 300px;
   }
 }

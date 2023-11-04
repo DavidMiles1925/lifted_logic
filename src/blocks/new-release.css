@@ -19,8 +19,8 @@
 }
 
 .new-rel__description {
-  margin: 24px 0 0;
-  width: 569px;
+  margin: 24px 12px 0;
+  max-width: 569px;
   text-align: center;
   line-height: 26px;
 }
