@@ -10,8 +10,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].bundle.js",
-    publicPath: "/",
+    filename: "[name].js",
+    publicPath: "",
   },
   target: ["web", "es5"],
   stats: "errors-only",
