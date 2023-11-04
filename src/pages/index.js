@@ -1,80 +1,46 @@
 import "./index.css";
 import FormValidator from "../components/FormValidator";
-import { configValidate } from "../constants/constants";
+import { configValidate, cardsData } from "../constants/constants";
 
 function createCard(imageSrc, title, content, content_2) {
   const card = document.createElement("div");
   card.classList.add("card");
 
   const image = document.createElement("div");
-  image.src = imageSrc;
-  image.alt = title + " Image";
+  image.classList.add("card__image");
+  image.classList.add(`card__image_type_${imageSrc}`);
+
+  const container = document.createElement("div");
+  container.classList.add("card__info");
 
   const heading = document.createElement("h2");
+  heading.classList.add("card__heading");
   heading.textContent = title;
 
   const paragraph1 = document.createElement("p");
+  paragraph1.classList.add("card__content1");
   paragraph1.textContent = content;
 
   const paragraph2 = document.createElement("p");
   paragraph2.textContent = content_2;
 
   card.appendChild(image);
-  card.appendChild(heading);
-  card.appendChild(paragraph1);
-  card.appendChild(paragraph2);
+  card.appendChild(container);
+  container.appendChild(heading);
+  container.appendChild(paragraph1);
+  container.appendChild(paragraph2);
 
   return card;
 }
 
-const cardContainer = document.querySelector(".card-container");
+const cardContainer = document.querySelector(".card__container");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 
-// Calculate the card width including margin
 const cardWidth = document.querySelector(".card").offsetWidth;
 const cardMargin = parseInt(
   getComputedStyle(document.querySelector(".card")).marginRight
 );
-
-// Initial card position
-let cardPosition = 0;
-
-const cardsData = [
-  {
-    imageSrc: "../images/Images/71RLkNIuZNL._SY355_.jpg",
-    title: "Trapsoul",
-    content: "Bryson Tiller",
-    content_2:
-      "Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.",
-  },
-  {
-    imageSrc: "card1.jpg",
-    title: "Card 2",
-    content: "Bryson Tiller.",
-    content_2:
-      "Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.",
-  },
-  {
-    imageSrc: "card1.jpg",
-    title: "Card 3",
-    content: "Card 1 content here.",
-    content_2:
-      "Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.",
-  },
-  {
-    imageSrc: "card1.jpg",
-    title: "Card 4",
-    content_2:
-      "Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.",
-  },
-  {
-    imageSrc: "card1.jpg",
-    title: "Card 5",
-    content_2:
-      "Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.",
-  },
-];
 
 cardsData.forEach((data) => {
   const card = createCard(
@@ -86,8 +52,23 @@ cardsData.forEach((data) => {
   cardContainer.appendChild(card);
 });
 
-const maxPosition =
-  (cardContainer.childElementCount - 1) * (cardWidth + cardMargin);
+function duplicateFirstCard() {
+  const firstCard = cardContainer.querySelector(".card");
+  const clonedCard = firstCard.cloneNode(true);
+  cardContainer.appendChild(clonedCard);
+  console.log("appended");
+  console.log(clonedCard);
+}
+
+const maxPosition = cardContainer.childElementCount * (cardWidth + cardMargin);
+
+let cardPosition = 0;
+
+function updateCardContainerPosition() {
+  cardContainer.style.transform = `translateX(-${cardPosition}px)`;
+}
+
+duplicateFirstCard();
 
 prevButton.addEventListener("click", () => {
   cardPosition =
@@ -99,7 +80,3 @@ nextButton.addEventListener("click", () => {
   cardPosition = (cardPosition + cardWidth + cardMargin) % maxPosition;
   updateCardContainerPosition();
 });
-
-function updateCardContainerPosition() {
-  cardContainer.style.transform = `translateX(-${cardPosition}px)`;
-}

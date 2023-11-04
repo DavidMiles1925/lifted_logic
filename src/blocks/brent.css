@@ -53,3 +53,7 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.brent__learn-button:active {
+  transform: scale(1);
+}

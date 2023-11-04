@@ -1,22 +1,128 @@
-.card-container {
-  display: flex;
-  height: 500px;
-  width: 3750px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+.card__section {
   overflow: hidden;
 }
 
+.card__container {
+  margin: 0;
+  background-color: #f6f6f6;
+  height: 414px;
+  width: 4650px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: transform 1s;
+}
+
 .card {
+  margin: 0 50px 0 0;
   flex: 0 0 auto;
   width: 570px;
   max-height: 324px;
-  padding: 10px;
-  margin: 0 50px;
-  border: 1px solid #ccc;
-  display: inline-block;
+  padding: 68px 24px;
+  background-color: white;
+  border: none;
+  display: flex;
   vertical-align: top;
   position: relative;
-  transition: transform 0.3s;
+  left: 286px;
+}
+
+.card__info {
+  max-width: 310px;
+  max-height: 200px;
+  margin-left: 23px;
+}
+.card__heading {
+  margin: 0;
+  color: #001d5d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.card__content1 {
+  color: #42a418;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.card__content2 {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 20px;
+}
+
+.card__image {
+  width: 189px;
+  height: 188px;
+  background-size: cover;
+}
+
+.card__image_type_missing {
+  background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
+}
+
+.card__image_type_trapsoul {
+  background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
+}
+
+.card__image_type_sonder {
+  background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
+}
+
+.card__image_type_paradise {
+  background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
+}
+
+.card__image_type_needed {
+  background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
+}
+
+.card__image_type_david {
+  background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  background-color: #f6f6f6;
+  justify-content: center;
+}
+
+.card__button-circle {
+  margin: 64px 12px 83px;
+  width: 68px;
+  height: 68px;
+  border-radius: 34px;
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.card__button-circle:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card__button-circle:active {
+  transform: scale(1);
+}
+
+.card__previous {
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/Icons/Basic_Icons/Arrows_Button_Left.svg");
+  background-size: cover;
+}
+
+.card__next {
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/Icons/Basic_Icons/Arrows_Button_Right.svg");
+  background-size: cover;
 }

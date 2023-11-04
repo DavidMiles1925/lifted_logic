@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: scroll;
 }
 
 .new-rel__heading {
