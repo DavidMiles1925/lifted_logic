@@ -59,17 +59,21 @@
 }
 
 .contact__text-box {
-  margin-right: 32px;
-  width: 241px;
+  margin: 12px 32px 0 0;
   padding: 16px 10px 16px 16px;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
+  color: #001d5d;
+}
+
+.contact__text-box_type_small {
+  width: 241px;
 }
 
 .contact__text-box_type_large {
   max-width: 544px;
   height: 100px;
   padding: 16px 11px 28px 16px;
-  text-align: left;
   vertical-align: top;
   text-wrap: wrap;
 }
@@ -79,11 +83,14 @@
   width: 267px;
   padding: 16px 10px 16px 16px;
   color: #777;
-  font-size: 16px;
+}
+
+.contact__text-box_type_dropdown.selected {
+  color: #001d5d;
 }
 
 .contact__dropdown-item {
-  color: #000000;
+  color: #001d5d;
 }
 
 .contact__form-image-section {

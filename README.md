@@ -8,7 +8,9 @@ This project is a demo that was completed for Lifted Logic. Check out their webs
 
 - **Keeping it simple:** I kept this project very vanilla. I did not use any JS frameworks such as React or Angular. I felt this would better show my personal skills as a developer.
 
-- **Data Validation:** I have written a custom hook in the past to be able to initialize data validation in forms in a signle line of code.  
+- **The slider was a challenge:** I had actually never done this before, so I decided to challenge myself to do this from scratch, rather than using any kind of JS library. It is not the prettiest thing in the world, but I wasn't too upset with the way it turned out.
+
+- **Data Validation:** The data validation I put in place was designed to demonstarte not only data validation, but also concepts of classes in OOP. I have also written a custom React hook in the past to be able to initialize data validation in forms in a signle line of code.  
   &emsp;[Link Here]
 
 ## Other Projects to Check Out:
