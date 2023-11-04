@@ -42,6 +42,7 @@
   margin: 0 0 58px 66px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer__link-container {

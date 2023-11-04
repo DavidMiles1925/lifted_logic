@@ -11,3 +11,12 @@
   padding: 0;
   display: block;
 }
+
+@media screen and (max-width: 1142px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
