@@ -124,6 +124,9 @@
       </div>
       <!-- End of new-rel. -->
 
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC69j9W-TzU894vn6q7i6cyA_pob7sS6JE"></script>
+      <div id="map" style="width: 100%; height: 720px"></div>
+
       <div class="contact">
         <div class="contact__description-container">
           <h3 class="contact__form-heading">Get In Touch</h3>
@@ -177,7 +180,7 @@
                 <select
                   id="reasons"
                   name="reasons"
-                  class="contact__text-box_type_dropdown"
+                  class="contact__text-box contact__text-box_type_dropdown"
                 >
                   <option value="" disabled selected>Select One</option>
                   <option class="contact__dropdown-item">Option1</option>
@@ -187,10 +190,10 @@
             </fieldset>
             <fieldset class="contact__form-bottom">
               <label class="contact__label">Message (Optional)</label>
-              <input
-                class="contact__text-box_type_large"
+              <textarea
+                class="contact__text-box contact__text-box_type_large"
                 placeholder="Write a brief message..."
-              />
+              ></textarea>
               <button type="submit" class="contact__learn-button" name="">
                 Learn More
               </button>

@@ -2,6 +2,43 @@ import "./index.css";
 import FormValidator from "../components/FormValidator";
 import { configValidate, cardsData } from "../constants/constants";
 
+// CODE FOR SYTLING DROPDOWN
+
+const dropdownElement = document.getElementById("reasons");
+
+console.log(dropdownElement);
+
+dropdownElement.addEventListener("change", function () {
+  if (dropdownElement.value !== "Select One") {
+    dropdownElement.classList.add("selected");
+  } else {
+    dropdownElement.classList.remove("selected");
+  }
+});
+
+// CODE FOR GOOGLE MAP
+
+function initMap() {
+  var mapOptions = {
+    center: { lat: 38.98732865633846, lng: -94.66840803164911 },
+    zoom: 15,
+    mapId: "d4770bfb3e9cda45",
+  };
+
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+  var markerPosition = { lat: 38.98732865633846, lng: -94.66840803164911 };
+
+  var marker = new google.maps.Marker({
+    position: markerPosition,
+    map: map,
+    title: "Lifted Logic",
+    label: "Lifted Logic",
+  });
+}
+
+// CODE FOR CARD SLIDER
+
 function createCard(imageSrc, title, content, content_2) {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -22,6 +59,7 @@ function createCard(imageSrc, title, content, content_2) {
   paragraph1.textContent = content;
 
   const paragraph2 = document.createElement("p");
+  paragraph2.classList.add("card__content2");
   paragraph2.textContent = content_2;
 
   card.appendChild(image);
@@ -70,6 +108,10 @@ function updateCardContainerPosition() {
 
 duplicateFirstCard();
 
+// ADD EVENT LISTENERS
+
+google.maps.event.addDomListener(window, "load", initMap);
+
 prevButton.addEventListener("click", () => {
   cardPosition =
     (cardPosition - cardWidth - cardMargin + maxPosition) % maxPosition;
@@ -80,3 +122,5 @@ nextButton.addEventListener("click", () => {
   cardPosition = (cardPosition + cardWidth + cardMargin) % maxPosition;
   updateCardContainerPosition();
 });
+
+google.maps.event.addDomListener(window, "load", initMap);

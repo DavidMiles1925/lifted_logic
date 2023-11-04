@@ -51,7 +51,7 @@
 
 .card__content2 {
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 20px;
 }
 
@@ -107,6 +107,8 @@
 .card__button-circle:hover {
   cursor: pointer;
   transform: scale(1.1);
+  background-color: #ffe2a2;
+  filter: invert(1);
 }
 
 .card__button-circle:active {
