@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   devtool: "inline-source-map",
@@ -32,6 +33,10 @@ module.exports = {
         test: /\.(ico)$/,
         use: ["file-loader?name=[name].[ext]"],
       },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
     ],
   },
   plugins: [
@@ -39,5 +44,6 @@ module.exports = {
       template: "src/index.html", // Specify your HTML template
       favicon: "src/favicon.ico",
     }),
+    new MiniCssExtractPlugin(), // connect the plugin for merging CSS files
   ],
 };
