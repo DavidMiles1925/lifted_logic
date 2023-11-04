@@ -16,7 +16,7 @@
   background-size: cover;
   z-index: -1;
   background-position: center center;
-  animation: zoom 20s infinite alternate;
+  animation: zoom 25s linear infinite alternate;
 }
 
 @keyframes zoom {
@@ -34,7 +34,7 @@
 
 .video__header {
   font-size: 64px;
-  margin: 0 0 24px 0;
+  margin: 0 24px 24px 0;
   color: #ffffff;
   font-weight: 700;
 }
@@ -86,4 +86,14 @@
   width: 20px;
   height: 20px;
   background-image: url("../images/Icons/Basic_Icons/Play_button_triangle.svg");
+}
+
+@media screen and (max-width: 799px) {
+  .video__description {
+    max-width: 300px;
+  }
+
+  .video__text-container {
+    margin: 100px 0 0 75px;
+  }
 }

@@ -5,7 +5,6 @@
 .card__container {
   margin: 0;
   background-color: #f6f6f6;
-  height: 414px;
   width: 4650px;
   display: flex;
   position: relative;
@@ -17,7 +16,6 @@
   margin: 0 50px 0 0;
   flex: 0 0 auto;
   width: 570px;
-  max-height: 324px;
   padding: 68px 24px;
   background-color: white;
   border: none;
@@ -127,4 +125,46 @@
   height: 26px;
   background-image: url("../images/Icons/Basic_Icons/Arrows_Button_Right.svg");
   background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .card__image {
+    margin-left: 32px;
+    height: 188px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 400px;
+    padding: 44px 20px;
+    position: relative;
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 200px;
+    padding: 10px 10px;
+    position: relative;
+    left: 75px;
+  }
+
+  .card__info {
+    max-width: 310px;
+    max-height: 400px;
+    margin-left: 23px;
+  }
+
+  .card__image {
+    margin-left: 18px;
+    width: 150px;
+    height: 150px;
+  }
 }
