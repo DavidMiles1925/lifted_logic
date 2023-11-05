@@ -6,11 +6,7 @@
 .form__error_visible {
   max-width: 250px;
   font-size: 12px;
-  line-height: 15px;
-  color: rgba(255, 0, 0, 1);
+  line-height: 16px;
+  color: rgba(66, 164, 24, 1);
   margin: 0;
-}
-
-.form__input_type_error {
-  border-bottom: 1px solid rgba(255, 0, 0, 1);
 }

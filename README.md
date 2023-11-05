@@ -15,6 +15,10 @@ This project is a demo that was completed for Lifted Logic. Check out their webs
 - **Data Validation:** The data validation I put in place was designed to demonstarte not only data validation, but also concepts of classes in OOP. I have also written a custom React hook in the past to be able to initialize data validation in forms in a signle line of code.  
   &emsp;[Link Here](https://github.com/DavidMiles1925/se_project_react/blob/main/src/utils/useFormAndValidation.js)
 
+## Resources
+
+Link to Figma Design: [Design Link](https://www.figma.com/file/fy9y8fio9H5gdToxNVEMXl/Layout?node-id=3%3A2346&mode=dev)
+
 ## Other Projects to Check Out:
 
 > - [**Random Pokemon Generator**](https://github.com/DavidMiles1925/random-pokemon-react) - A simple React website that generates a random pokemon.  

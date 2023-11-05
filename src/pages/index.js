@@ -33,18 +33,18 @@ function initMap() {
     mapId: "d4770bfb3e9cda45",
   };
 
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-  var markerPosition = { lat: 38.98732865633846, lng: -94.66840803164911 };
+  const markerPosition = { lat: 38.98732865633846, lng: -94.66840803164911 };
 
-  var marker = new google.maps.Marker({
+  const marker = new google.maps.Marker({
     position: markerPosition,
     map: map,
     title: "Lifted Logic",
     label: {
       text: "Lifted Logic",
-      color: "#ffffff",
-      fontSize: "32px",
+      color: "#000000",
+      fontSize: "42px",
     },
   });
 }
