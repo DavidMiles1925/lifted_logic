@@ -1,9 +1,8 @@
 const configValidate = {
-  formSelector: ".form",
   formFieldsetSelector: ".form__fieldset",
-  inputSelector: ".form__input",
-  submitButtonSelector: ".form__submit-button",
-  inactiveButtonClass: "form__submit-button_inactive",
+  inputSelector: ".contact__text-box",
+  submitButtonSelector: ".contact__learn-button",
+  inactiveButtonClass: "form__submit-button_inactive", // Can be used in future versions
   inputErrorClass: "form__input_type_error",
   errorClass: "form__error_visible",
 };

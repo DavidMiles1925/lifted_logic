@@ -46,7 +46,12 @@ class FormValidator {
 
   _handleInputChange(inputElement) {
     this._checkInputValidity(inputElement);
-    this._toggleButtonState();
+
+    /* 
+      This code can be un-commented to disable the submit button
+      when the form is not completely valid.
+    */
+    // this._toggleButtonState();
   }
 
   _setEventListeners() {
@@ -57,7 +62,11 @@ class FormValidator {
       this._settings.submitButtonSelector
     );
 
-    this._toggleButtonState();
+    /* 
+      This code can be un-commented to disable the submit button
+      when the form is not completely valid.
+    */
+    // this._toggleButtonState();
 
     this._inputList.forEach((inputElement) => {
       inputElement.addEventListener("input", () =>
