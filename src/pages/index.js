@@ -4,7 +4,7 @@ import { configValidate, cardsData } from "../constants/constants";
 
 // CODE FOR SYTLING DROPDOWN
 
-const dropdownElement = document.getElementById("reasons");
+const dropdownElement = document.getElementById("drop");
 
 console.log(dropdownElement);
 
@@ -15,6 +15,14 @@ dropdownElement.addEventListener("change", function () {
     dropdownElement.classList.remove("selected");
   }
 });
+
+// CODE FOR DATA VALIDATION
+
+const formElement = document.querySelector(".contact__form");
+
+const formValidator = new FormValidator(configValidate, formElement);
+
+formValidator.enableValidation();
 
 // CODE FOR GOOGLE MAP
 
@@ -114,7 +122,9 @@ duplicateFirstCard();
 
 // ADD EVENT LISTENERS
 
-google.maps.event.addDomListener(window, "load", initMap);
+// google.maps.event.addDomListener(window, "load", initMap);
+
+window.addEventListener("load", initMap);
 
 prevButton.addEventListener("click", () => {
   cardPosition =
@@ -126,5 +136,3 @@ nextButton.addEventListener("click", () => {
   cardPosition = (cardPosition + cardWidth + cardMargin) % maxPosition;
   updateCardContainerPosition();
 });
-
-google.maps.event.addDomListener(window, "load", initMap);
