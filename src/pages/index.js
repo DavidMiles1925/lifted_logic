@@ -27,7 +27,7 @@ formValidator.enableValidation();
 // CODE FOR GOOGLE MAP
 
 function initMap() {
-  var mapOptions = {
+  const mapOptions = {
     center: { lat: 38.98732865633846, lng: -94.66840803164911 },
     zoom: 15,
     mapId: "d4770bfb3e9cda45",
