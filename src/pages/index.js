@@ -117,10 +117,10 @@ function updateCardContainerPosition() {
 duplicateFirstCard();
 
 // ADD EVENT LISTENERS
-
+/* This seems to be causing an issue on mobile devices with the form text boxes. I will have to look into this more at a later date. 
 window.addEventListener("resize", () => {
   location.reload();
-});
+});*/
 
 window.addEventListener("load", initMap);
 
