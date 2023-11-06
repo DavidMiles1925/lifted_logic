@@ -1,6 +1,5 @@
 .brent {
   max-width: 100%;
-  max-height: 1200px;
   padding: 128px 0px 128px 50px;
   display: flex;
   flex-direction: row;
@@ -24,7 +23,6 @@
 
 .brent__description-container {
   max-width: 467px;
-  height: 455px;
 }
 
 .brent__description {
