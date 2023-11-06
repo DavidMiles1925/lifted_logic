@@ -49,6 +49,7 @@
   margin: 24px 0 0 150px;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .video__play-circle {
