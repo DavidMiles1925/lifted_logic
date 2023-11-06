@@ -118,8 +118,6 @@ duplicateFirstCard();
 
 // ADD EVENT LISTENERS
 
-// google.maps.event.addDomListener(window, "load", initMap);
-
 window.addEventListener("load", initMap);
 
 prevButton.addEventListener("click", () => {
