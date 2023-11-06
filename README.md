@@ -4,7 +4,7 @@
 
 ## About the Project
 
-This project is a demo that was completed for Lifted Logic. Check out their website: [Lifted Logic Home](https://liftedlogic.com/)
+This project is a demo by David Miles that was completed for Lifted Logic. Check out their website: [Lifted Logic Home](https://liftedlogic.com/)
 
 ## Comments
 
