@@ -4,6 +4,7 @@
 
 .card__container {
   margin: 0;
+  padding-top: 56px;
   background-color: #f6f6f6;
   width: 4650px;
   display: flex;
@@ -83,7 +84,7 @@
   background-image: url("../images/Images/71RLkNIuZNL._SY355_.jpg");
 }
 
-.navigation {
+.card_navigation {
   display: flex;
   width: 100%;
   background-color: #f6f6f6;
@@ -166,5 +167,14 @@
     margin-left: 18px;
     width: 150px;
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card {
+    width: 200px;
+    padding: 10px 10px;
+    position: relative;
+    left: 32px;
   }
 }

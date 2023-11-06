@@ -39,11 +39,11 @@ function initMap() {
     position: markerPosition,
     map: map,
     title: "Lifted Logic",
-    label: {
+    /*label: {
       text: "Lifted Logic",
       color: "#000000",
       fontSize: "42px",
-    },
+    },*/
   });
 }
 
@@ -117,6 +117,10 @@ function updateCardContainerPosition() {
 duplicateFirstCard();
 
 // ADD EVENT LISTENERS
+
+window.addEventListener("resize", () => {
+  location.reload();
+});
 
 window.addEventListener("load", initMap);
 
