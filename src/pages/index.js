@@ -6,8 +6,6 @@ import { configValidate, cardsData } from "../constants/constants";
 
 const dropdownElement = document.getElementById("drop");
 
-console.log(dropdownElement);
-
 dropdownElement.addEventListener("change", function () {
   if (dropdownElement.value !== "Select One") {
     dropdownElement.classList.add("selected");
@@ -41,11 +39,11 @@ function initMap() {
     position: markerPosition,
     map: map,
     title: "Lifted Logic",
-    label: {
+    /*label: {
       text: "Lifted Logic",
       color: "#000000",
       fontSize: "42px",
-    },
+    },*/
   });
 }
 
@@ -106,8 +104,6 @@ function duplicateFirstCard() {
   const firstCard = cardContainer.querySelector(".card");
   const clonedCard = firstCard.cloneNode(true);
   cardContainer.appendChild(clonedCard);
-  console.log("appended");
-  console.log(clonedCard);
 }
 
 const maxPosition = cardContainer.childElementCount * (cardWidth + cardMargin);
@@ -122,7 +118,9 @@ duplicateFirstCard();
 
 // ADD EVENT LISTENERS
 
-// google.maps.event.addDomListener(window, "load", initMap);
+window.addEventListener("resize", () => {
+  location.reload();
+});
 
 window.addEventListener("load", initMap);
 
