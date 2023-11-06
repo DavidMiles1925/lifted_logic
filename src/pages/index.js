@@ -6,8 +6,6 @@ import { configValidate, cardsData } from "../constants/constants";
 
 const dropdownElement = document.getElementById("drop");
 
-console.log(dropdownElement);
-
 dropdownElement.addEventListener("change", function () {
   if (dropdownElement.value !== "Select One") {
     dropdownElement.classList.add("selected");
@@ -106,8 +104,6 @@ function duplicateFirstCard() {
   const firstCard = cardContainer.querySelector(".card");
   const clonedCard = firstCard.cloneNode(true);
   cardContainer.appendChild(clonedCard);
-  console.log("appended");
-  console.log(clonedCard);
 }
 
 const maxPosition = cardContainer.childElementCount * (cardWidth + cardMargin);
